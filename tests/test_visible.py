@@ -16,5 +16,5 @@ def test_not_visible_btn_sidebar(browser):
     assert de_mo_qa_pages.btn_sidebar_first_checkbox.visible()
     de_mo_qa_pages.btn_sidebar_first.click()
     time.sleep(2)
-    assert not de_mo_qa_pages.btn_sidebar_first.visible()
+    assert not de_mo_qa_pages.btn_sidebar_first_checkbox.visible()
 
