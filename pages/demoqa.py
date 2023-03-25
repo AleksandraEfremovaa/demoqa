@@ -11,3 +11,4 @@ class DemoQa(BasePage):
         self.btn_element = WedElement(driver, '#app > div > div > div.home-body > div > div:nth-child(1)')
         self.footer = WedElement(driver, '#app > footer > span')
 
+
