@@ -8,13 +8,26 @@ class BasePage:
     def visit(self):
         return self.driver.get(self.base_url)
 
+    def back(self):
+        self.driver.back()
+
+    def forward(self):
+        self.driver.forward()
+
+    def refresh(self):
+        self.driver.refresh()
+
     def get_url(self):
         return self.driver.current_url  #возвращаем текущий урл
+
+    def get_title(self):
+        return self.driver.get_title
 
     def equal_url(self):
         if self.get_url() == self.base_url:
             return True
         return False
+
 
 
 

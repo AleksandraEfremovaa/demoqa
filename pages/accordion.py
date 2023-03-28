@@ -6,6 +6,10 @@ class Accordion(BasePage):
     def __init__(self, driver):
         self.base_url = 'https://demoqa.com/accordian'
         super().__init__(driver, self.base_url)
+        self.pageData = {
+            'title': 'DEMOQA'
+
+        }
 
         self.answer_accordion = WedElement(driver, '#section1Content > p')
         self.question_accord_first = WedElement(driver, '#section1Heading')
