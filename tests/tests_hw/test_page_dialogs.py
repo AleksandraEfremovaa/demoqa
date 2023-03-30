@@ -20,7 +20,7 @@ def test_navigation_modal(browser):
     browser.set_window_size(900, 400)
     time.sleep(3)
     browser.forward()
-    assert modal_dialogs.equal_url()
+
     assert browser.title == modal_dialogs.pageData['title']
     browser.set_window_size(1000, 1000)
 

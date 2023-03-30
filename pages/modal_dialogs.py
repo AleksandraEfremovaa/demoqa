@@ -14,3 +14,4 @@ class ModalDialogs(BasePage):
 
         self.btns_alerts_frame = WedElement(driver, 'div:nth-child(3) > div > ul > li')
         self.icon_main_page = WedElement(driver, '#app > header > a > img')
+        self.main_page = WedElement(driver, 'https://demoqa.com/')

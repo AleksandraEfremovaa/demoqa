@@ -17,5 +17,12 @@ class FormPage(BasePage):
         self.gender_male = WedElement(driver, '#genterWrapper > div.col-md-9.col-sm-12 > div:nth-child(1)')
         self.gender_female = WedElement(driver, '#genterWrapper > div.col-md-9.col-sm-12 > div:nth-child(2)')
         self.gender_other = WedElement(driver, '#genterWrapper > div.col-md-9.col-sm-12 > div:nth-child(3)')
-        self.mobile = WedElement(driver, '#userNumber')
+        self.user_number = WedElement(driver, '#userNumber')
+        self.modal_dialog = WedElement(driver, 'body > div.fade.modal.show > div')
+        self.btn_close_modal = WedElement(driver, '#closeLargeModal')
+        self.user_email = WedElement(driver, '#userEmail')
+        self.btn_submit = WedElement(driver, '#submit')
+        self.user_form = WedElement(driver, '#userForm')
+        self.btn_state_a_city = WedElement(driver, '#state > div > div.css-1wy0on6 > div > svg')
+
 
