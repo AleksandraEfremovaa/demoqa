@@ -15,3 +15,10 @@ class ModalDialogs(BasePage):
         self.btns_alerts_frame = WedElement(driver, 'div:nth-child(3) > div > ul > li')
         self.icon_main_page = WedElement(driver, '#app > header > a > img')
         self.main_page = WedElement(driver, 'https://demoqa.com/')
+        self.small_modal = WedElement(driver, '#showSmallModal')
+        self.large_modal = WedElement(driver, '#showLargeModal')
+        self.modal_window_small = WedElement(driver, 'body > div.fade.modal.show > div > div')
+        self.close_small_modal = WedElement(driver, '#closeSmallModal')
+        self.close_large_modal = WedElement(driver, '#closeLargeModal')
+        self.modal_window_large = WedElement(driver, 'body > div.fade.modal.show > div > div')
+

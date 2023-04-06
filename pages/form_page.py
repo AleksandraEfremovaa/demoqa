@@ -23,6 +23,7 @@ class FormPage(BasePage):
         self.user_email = WedElement(driver, '#userEmail')
         self.btn_submit = WedElement(driver, '#submit')
         self.user_form = WedElement(driver, '#userForm')
-        self.btn_state_a_city = WedElement(driver, '#state > div > div.css-1wy0on6 > div > svg')
+        self.btn_state_a_city = WedElement(driver, '#state > div > div.css-1wy0on6')
+        self.new = WedElement(driver, '#state > div > div.css-1hwfws3')
 
 
